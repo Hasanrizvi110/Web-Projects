@@ -1,0 +1,35 @@
+.logout-content {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 20px;
+  text-align: center;
+}
+
+#confirm-logout,
+#cancel-logout {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#confirm-logout {
+  background-color: var(--primaryColor);
+  color: white;
+}
+
+#cancel-logout {
+  background-color: #6c757d;
+  color: white;
+}
+
+#confirm-logout:hover {
+  background-color: var(--secondaryColor);
+}
+
+#cancel-logout:hover {
+  background-color: #5a6268;
+}

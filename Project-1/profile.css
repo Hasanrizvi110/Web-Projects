@@ -1,0 +1,85 @@
+/* Profile Page Styles */
+.profile-container {
+  width: 50%;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: var(--whiteColor);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  text-align: center;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.username {
+  font-size: 24px;
+  color: var(--primaryColor);
+}
+
+.profile-form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--blackColor);
+  background-color: var(--softGreenColor);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid var(--greyColor);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.save-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: var(--secondaryColor);
+  color: var(--blackColor);
+}
+
+/* CSS for Back to Home Button */
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: var(--primaryColor);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  background-color: var(--secondaryColor);
+  color: var(--blackColor);
+}

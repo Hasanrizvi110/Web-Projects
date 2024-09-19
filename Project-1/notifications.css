@@ -1,0 +1,24 @@
+.notifications-content {
+  padding: 20px;
+}
+
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.notification-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.notification-item h4 {
+  margin: 0;
+}
+
+.notification-item p {
+  margin: 5px 0 0;
+}

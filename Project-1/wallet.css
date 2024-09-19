@@ -1,0 +1,70 @@
+.wallet-content {
+  padding: 20px;
+}
+
+.wallet-balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.wallet-transactions {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.transactions-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction-item {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.transaction-item p {
+  margin-bottom: 5px;
+}
+
+.transaction-item:last-child {
+  border-bottom: none;
+}
+
+.wallet-balance button {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: var(--primaryColor);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Box-shadow and hover effect */
+
+.wallet-balance button:hover {
+  background-color: var(
+    --secondaryColor
+  ); /* Change background color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Apply shadow on hover */
+  color: #222;
+}
+
+/* Optional: Add box-shadow when the button is focused */
+.wallet-balance button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

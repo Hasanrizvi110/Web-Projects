@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <div class="profile-container">
+      <h1>User Profile</h1>
+      <div class="profile-header">
+        <img
+          src="profile-picture.jpg"
+          alt="Profile Picture"
+          class="profile-picture"
+        />
+        <h2 class="username">Username</h2>
+      </div>
+      <form class="profile-form">
+        <div class="form-group">
+          <label for="full-name">Full Name:</label>
+          <input type="text" id="full-name" name="full-name" value="John Doe" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value="johndoe@example.com"
+          />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" value="123-456-7890" />
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <textarea id="address" name="address">
+123 Main St, Anytown, USA</textarea
+          >
+        </div>
+        <button type="submit" class="save-btn">Save Changes</button>
+      </form>
+      <!-- back to home button -->
+      <a href="index1.html" class="back-btn">Back to Home</a>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="settings.css" />
+    <!-- Add a new CSS file for settings page -->
+    <title>Settings - FoodZoo</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <h1 class="logo">FOODZOO</h1>
+      <div class="sidebar-menus">
+        <a href="index1.html"
+          ><ion-icon name="storefront-outline"></ion-icon>Home</a
+        >
+        <a href="bills.html"
+          ><ion-icon name="receipt-outline"></ion-icon>Bills</a
+        >
+        <a href="wallet.html"
+          ><ion-icon name="wallet-outline"></ion-icon>Wallet</a
+        >
+        <a href="notifications.html"
+          ><ion-icon name="notifications-outline"></ion-icon>Notification</a
+        >
+        <a href="contact.html"
+          ><ion-icon name="chatbubbles-outline"></ion-icon>Contact us</a
+        >
+        <a href="settings.html"
+          ><ion-icon name="settings-outline"></ion-icon>Setting</a
+        >
+      </div>
+      <div class="sidebar-logout">
+        <a href="logout.html"
+          ><ion-icon name="log-out-outline"></ion-icon>Logout</a
+        >
+      </div>
+    </div>
+    <div class="main">
+      <div class="main-navbar">
+        <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
+        <div class="search">
+          <input type="text" placeholder="Search..." />
+          <button class="search-btn">Search</button>
+        </div>
+        <div class="profile">
+          <a class="cart" href="cart.html">
+            <ion-icon name="cart-outline"></ion-icon>
+            <span class="cart-count" id="cart-count">0</span>
+          </a>
+          <a class="user" href="profile.html"
+            ><ion-icon name="person-outline"></ion-icon
+          ></a>
+        </div>
+      </div>
+      <div class="settings-content">
+        <h2 class="main-title">Settings</h2>
+
+        <!-- Profile Section -->
+        <div class="settings-section">
+          <h3>Profile Settings</h3>
+          <form id="profile-form">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <button type="submit">Save Changes</button>
+            <div id="profile-message"></div>
+          </form>
+        </div>
+
+        <!-- Notification Settings -->
+        <div class="settings-section">
+          <h3>Notification Settings</h3>
+          <form id="notification-form">
+            <div class="form-group">
+              <label>
+                <input
+                  type="checkbox"
+                  id="email-notifications"
+                  name="email-notifications"
+                />
+                Email Notifications
+              </label>
+            </div>
+            <div class="form-group">
+              <label>
+                <input
+                  type="checkbox"
+                  id="sms-notifications"
+                  name="sms-notifications"
+                />
+                SMS Notifications
+              </label>
+            </div>
+            <button type="submit">Save Notification Preferences</button>
+            <div id="notification-message"></div>
+          </form>
+        </div>
+
+        <!-- Other Preferences Section -->
+        <div class="settings-section">
+          <h3>Other Preferences</h3>
+          <form id="preferences-form">
+            <div class="form-group">
+              <label for="theme">Theme:</label>
+              <select id="theme" name="theme">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+              </select>
+            </div>
+            <button type="submit">Save Preferences</button>
+            <div id="preferences-message"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="app.js"></script>
+    <script src="settings.js"></script>
+    <!-- Add a new JS file for settings page -->
+  </body>
+</html>

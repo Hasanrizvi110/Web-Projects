@@ -1,0 +1,53 @@
+.contact-content {
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.btn-sub {
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primaryColor);
+  color: white;
+  cursor: pointer;
+  width: 10%;
+  font-size: large;
+}
+
+/* Box-shadow and hover effect */
+.btn-sub:hover {
+  background-color: var(--secondaryColor);
+  color: #222;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Apply shadow on hover */
+}
+
+#form-message {
+  margin-top: 15px;
+  font-weight: bold;
+}
+/* Optional: Add box-shadow when the button is focused */
+.btn-sub:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

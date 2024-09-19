@@ -1,0 +1,58 @@
+.bills-content {
+  padding: 20px;
+}
+
+.bills-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.bill-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bill-item h4 {
+  margin: 0;
+}
+
+.bill-item p {
+  margin: 5px 0 0;
+}
+
+.bill-item button {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: var(--primaryColor);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Box-shadow and hover effect */
+
+.bill-item button:hover {
+  background-color: var(
+    --secondaryColor
+  ); /* Change background color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Apply shadow on hover */
+  color: #222;
+}
+
+/* Optional: Add box-shadow when the button is focused */
+.bill-item button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

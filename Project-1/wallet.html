@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="wallet.css" />
+    <!-- Add a new CSS file for wallet page -->
+    <title>Wallet - FoodZoo</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <h1 class="logo">FOODZOO</h1>
+      <div class="sidebar-menus">
+        <a href="index1.html"
+          ><ion-icon name="storefront-outline"></ion-icon>Home</a
+        >
+        <a href="bills.html"
+          ><ion-icon name="receipt-outline"></ion-icon>Bills</a
+        >
+        <a href="wallet.html"
+          ><ion-icon name="wallet-outline"></ion-icon>Wallet</a
+        >
+        <a href="notifications.html"
+          ><ion-icon name="notifications-outline"></ion-icon>Notification</a
+        >
+        <a href="#"
+          ><ion-icon name="chatbubbles-outline"></ion-icon>Contact us</a
+        >
+        <a href="#"><ion-icon name="settings-outline"></ion-icon>Setting</a>
+      </div>
+      <div class="sidebar-logout">
+        <a href="#"><ion-icon name="log-out-outline"></ion-icon>Logout</a>
+      </div>
+    </div>
+    <div class="main">
+      <div class="main-navbar">
+        <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
+        <div class="search">
+          <input type="text" placeholder="Search your wallet..." />
+          <button class="search-btn">Search</button>
+        </div>
+        <div class="profile">
+          <a class="cart" href="cart.html">
+            <ion-icon name="cart-outline"></ion-icon>
+            <span class="cart-count" id="cart-count">0</span>
+          </a>
+          <a class="user" href="profile.html"
+            ><ion-icon name="person-outline"></ion-icon
+          ></a>
+        </div>
+      </div>
+      <div class="wallet-content">
+        <h2 class="main-title">Your Wallet</h2>
+        <div class="wallet-balance">
+          <h3>Current Balance: ₹<span id="wallet-balance">0.00</span></h3>
+          <button onclick="addFunds()">Add Funds</button>
+        </div>
+        <div class="wallet-transactions">
+          <h3>Recent Transactions</h3>
+          <div class="transactions-list">
+            <!-- Transactions will be dynamically loaded here -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="app.js"></script>
+    <script src="wallet.js"></script>
+    <!-- Add a new JS file for wallet page -->
+  </body>
+</html>
